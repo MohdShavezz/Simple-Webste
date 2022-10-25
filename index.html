@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .first{
+            height: 150px;
+            width: 100%;
+            display: flex; 
+            justify-content: center;
+            align-items:center;
+            background-color: rgba(0, 128, 15, 0.377);
+        }
+        .first h1{
+            color:white;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        .first  p{
+            color:white;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        .links{
+            background-color: rgba(0, 0, 0,1);
+            padding: 6px;
+        }
+        .links a{
+            padding: 7px;
+            text-decoration: none;
+            color: azure;
+            margin-right: 10px;
+        }
+        section{
+            display: flex;
+        }
+        section .left{
+            flex:1;
+            padding: 10px;
+            background-color: rgba(167, 182, 197, 0.429);
+        }
+        section .right{
+            flex:3;
+            padding: 10px;
+        }
+        footer{
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(149, 140, 140, 0.368);
+        }
+        img{padding: 0 10px;}
+        @media only screen and (max-width: 768px) {
+            section{display: block;}
+            
+          }
+    </style>
+</head>
+<body>
+   <div class="first">
+    <div>
+        <h1>My Website</h1> 
+        <p>With a flexible layout</p>
+   </div>
+   </div>
+   <div class="links">
+    <a href="#">link</a><a href="#">link</a><a href="#">link</a><a href="#">link</a>
+   </div>
+   <section>
+    <div class="left">
+        <br>
+        <h2>About me</h2>
+        <br>
+        <p>Photo of me:</p><br>
+        <img src="https://via.placeholder.com/150" alt="image" height="120" width="100%">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, sapiente!</p>
+        <br>
+        <h2>More Text</h2>
+        <br>
+        <p>lroem ipsum dolor sil same</p>
+        <br>
+        <img src="https://via.placeholder.com/150" alt="image" height="30" width="100%">
+        <img src="https://via.placeholder.com/150" alt="image" height="30" width="100%">
+        <img src="https://via.placeholder.com/150" alt="image" height="30" width="100%">
+    </div>
+    <div class="right">
+        <br>
+        <h2>TITLE HEADING</h2>
+        <br>
+        <p>Photo of me:</p>
+        <br>
+        <img src="https://via.placeholder.com/150" alt="image" height="120" width="100%">
+        <p>some text</p>
+        <br>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, sapiente!</p>
+        <br>
+        <h2>TITLE HEADING</h2>
+        <br>
+        <p>lroem ipsum dolor sil same</p><br>
+        <img src="https://via.placeholder.com/150" alt="image" height="120" width="100%">
+        <p>some text</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, harum?</p><br>
+    </div>
+</section>
+<footer>
+    <h2>Footer</h2>
+</footer>
+</body>
+</html>
